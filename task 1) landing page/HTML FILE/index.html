@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=""UTF-8">
+        <title>Starbucks Website Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <section>
+            <div class ="circle">
+
+            </div>
+            <header>
+                <a href="#" class="logo"><img src="logo.png"></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                    <p>Welcome to Starbucks!
+                        At Starbucks, we are passionate about crafting the perfect cup of coffee and creating a warm and inviting atmosphere for our customers. Whether you're looking for your morning pick-me-up, a refreshing iced beverage, or a cozy spot to relax with friends, we've got you covered.
+                         </p>
+                     <a href="#">Learn More</a>
+                    </div>
+                    <div class="imgBox">
+                        <img src="img1.png" class="starbucks"> 
+                    </div>
+                    <ul class="thumb">
+                        <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')"></li>
+                        <li><img src="thumb2.png" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')"></li>
+                        <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"></li>
+                    </ul>
+                    <ul class="sci">
+                        <li><a href="#"><img src="facebook.png"></a></li>
+                        <li><a href="#"><img src="instagram.png"></a></li>
+                        <li><a href="#"><img src="twitter.png"></a></li>
+                    </ul>
+            </div>
+        </section>
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.starbucks').src = anything;
+            }
+            function changeCircleColor(color)
+            {
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+        </script>
+        <footer>
+            <div class="footerBottom">
+                <p>Copyright &copy;2023; Designed by sujay khond</p>
+
+            </div>
+        </footer>
+    </body>
+</html>
